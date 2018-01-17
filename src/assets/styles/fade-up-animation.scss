@@ -1,0 +1,28 @@
+@import 'animation.scss';
+@import 'variable.scss';
+
+@include keyframes(fade-up) {
+  100% {
+    -webkit-transform: translate3d(0, 0, 1px);
+    transform: translate3d(0, 0, 1px);
+    background-color: $default-page-background;
+  }
+  0% {
+    -webkit-transform: translate3d(0, 1.5625rem, 1px);
+    transform: translate3d(0, 1.5625rem, 1px);
+    background-color: $color-background-white-transparent-0;
+  }
+}
+
+@include keyframes(fade-up-buttons) {
+  100% {
+    -webkit-transform: translate3d(0, 0, 1px);
+    transform: translate3d(0, 0, 1px);
+    opacity: 1;
+  }
+  0% {
+    -webkit-transform: translate3d(0, .9375rem, 1px);
+    transform: translate3d(0, .9375rem, 1px);
+    opacity: 0;
+  }
+}

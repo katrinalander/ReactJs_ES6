@@ -1,0 +1,580 @@
+@import '../../assets/styles/variable';
+
+.icon-button {
+  background: transparent;
+  border: 0;
+  font-size: 0;
+  line-height: 0;
+  padding: 6px;
+
+  &:focus{
+    @include focus;
+  }
+}
+
+.icon{
+  font-family: 'icomoon';
+  font-style: normal;
+  //font-size: 16px;
+  display: inline-block;
+
+  &:after {
+    color: $icon-text;
+  }
+
+  &:hover {
+    &:after {
+      color: $icon-hover;
+    }
+  }
+
+  &:active {
+    &:after {
+      color: $icon-click;
+    }
+  }
+
+  &:focus {
+    outline: none;
+
+    &:after{
+      color: $icon-hover;
+      outline: 1px dashed $focused-state-dashes-line;
+    }
+  }
+}
+
+.icon-disabled {
+  &:after {
+    color: $icon-disabled;
+  }
+
+  &:hover {
+    &:after {
+      color: $icon-disabled;
+    }
+  }
+
+  &:active {
+    &:after {
+      color: $icon-disabled;
+    }
+  }
+}
+
+@mixin iconStyle {
+  @include font-size-20;
+  line-height: 100%;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hamburger:after {
+  content: '\e9bd';
+  @include iconStyle;
+}
+
+.pencil:after {
+  content: '\e90c';
+  @include iconStyle;
+}
+
+.flag:after {
+  content: "\e9cc";
+  @include iconStyle;
+}
+
+.camera:after {
+  content: '\e90f';
+  @include iconStyle;
+}
+
+.film:after {
+  content: '\e913';
+  @include iconStyle;
+}
+
+.connection:after {
+  content: '\e91b';
+  @include iconStyle;
+}
+
+.mic:after {
+  content: '\e91e';
+  @include iconStyle;
+}
+
+.files-empty:after {
+  content: '\e925';
+  @include iconStyle;
+}
+
+.file-text:after {
+  content: '\e926';
+  @include iconStyle;
+}
+
+.file-picture:after {
+  content: '\e927';
+  @include iconStyle;
+}
+
+.home:after {
+  content: '\e90b';
+  @include iconStyle;
+}
+
+.folder-open:after {
+  content: '\e930';
+  @include iconStyle;
+}
+
+.folder-plus:after {
+  content: '\e931';
+  @include iconStyle;
+}
+
+.folder-minus:after {
+  content: '\e932';
+  @include iconStyle;
+}
+
+.folder-download:after {
+  content: '\e933';
+  @include iconStyle;
+}
+
+.barcode:after {
+  content: '\e937';
+  @include iconStyle;
+}
+
+.qrcode:after {
+  content: '\e938';
+  @include iconStyle;
+}
+
+.location:after {
+  content: '\e947';
+  @include iconStyle;
+}
+
+.map:after {
+  content: '\e94c';
+  @include iconStyle;
+}
+
+.clock:after {
+  content: '\e94e';
+  @include iconStyle;
+}
+
+.printer:after {
+  content: '\e954';
+  @include iconStyle;
+}
+
+.phone:after {
+  content: '\e942';
+  @include iconStyle;
+}
+
+.display:after {
+  content: '\e956';
+  @include iconStyle;
+}
+
+.mobile:after {
+  content: '\e958';
+  @include iconStyle;
+}
+
+.save:after {
+  content: '\e962';
+  @include iconStyle;
+}
+
+.undo:after {
+  content: '\e965';
+  @include iconStyle;
+}
+
+.redo:after {
+  content: '\e966';
+  @include iconStyle;
+}
+
+.bubble:after {
+  content: '\e96e';
+  @include iconStyle;
+}
+
+.user:after {
+  content: '\e971';
+  @include iconStyle;
+}
+
+.users:after {
+  content: '\e972';
+  @include iconStyle;
+}
+
+.user-pus:after {
+  content: '\e973';
+  @include iconStyle;
+}
+
+.user-minus:after {
+  content: '\e974';
+  @include iconStyle;
+}
+
+.user-tie:after {
+  content: '\e976';
+  @include iconStyle;
+}
+
+.hour-glass:after {
+  content: '\e979';
+  @include iconStyle;
+}
+
+.spinner:after {
+  content: '\e97c';
+  @include iconStyle;
+}
+
+.zoom-in:after {
+  content: '\e987';
+  @include iconStyle;
+}
+
+.zoom-out:after {
+  content: '\e988';
+  @include iconStyle;
+}
+
+.lock:after {
+  content: '\e98f';
+  @include iconStyle;
+}
+
+.unlocked:after {
+  content: '\e990';
+  @include iconStyle;
+}
+
+.wrench:after {
+  content: '\e991';
+  @include iconStyle;
+}
+
+.attachment:after {
+  content: '\e9cd';
+  @include iconStyle;
+}
+
+.eye:after {
+  content: '\e9ce';
+  @include iconStyle;
+}
+
+.star-empty:after {
+  content: '\e9d7';
+  @include iconStyle;
+}
+
+.star-half:after {
+  content: '\e9d8';
+  @include iconStyle;
+}
+
+.star-full:after {
+  content: '\e9d9';
+  @include iconStyle;
+}
+
+.happy:after {
+  content: '\e9df';
+  @include iconStyle;
+}
+
+.sad:after {
+  content: '\e9e5';
+  @include iconStyle;
+}
+
+.wondering:after {
+  content: '\e9fb';
+  @include iconStyle;
+}
+
+.point-right:after {
+  content: '\ea04';
+  @include iconStyle;
+}
+
+.warning:after {
+  content: '\ea07';
+  @include iconStyle;
+}
+
+.info:after {
+  content: '\e88e';
+  @include iconStyle;
+}
+
+.info2:after {
+  content: '\e88f';
+  @include iconStyle;
+}
+
+.close:after {
+  content: '\ea0f';
+  @include iconStyle;
+}
+
+.checkmark:after {
+  content: '\ea10';
+  @include iconStyle;
+}
+
+.checkmark2:after {
+  content: '\ea11';
+  @include iconStyle;
+}
+
+.play:after {
+  content: '\ea1c';
+  @include iconStyle;
+}
+
+.pause:after {
+  content: '\ea1d';
+  @include iconStyle;
+}
+
+.stop:after {
+  content: '\ea1e';
+  @include iconStyle;
+}
+
+.backward:after {
+  content: '\ea1f';
+  @include iconStyle;
+}
+
+.forward:after {
+  content: '\ea20';
+  @include iconStyle;
+}
+
+.arrow-up:after {
+  content: '\ea3a';
+  @include iconStyle;
+}
+
+.arrow-right:after {
+  content: '\ea3c';
+  @include iconStyle;
+}
+
+.arrow-down:after {
+  content: '\ea3e';
+  @include iconStyle;
+}
+
+.arrow-left:after {
+  content: '\ea40';
+  @include iconStyle;
+}
+
+.circle-up:after {
+  content: '\ea41';
+  @include iconStyle;
+}
+
+.circle-right:after {
+  content: '\ea42';
+  @include iconStyle;
+}
+
+.circle-down:after {
+  content: '\ea43';
+  @include iconStyle;
+}
+
+.circle-left:after {
+  content: '\ea44';
+  @include iconStyle;
+}
+
+.mail:after {
+  content: '\ea84';
+  @include iconStyle;
+}
+
+.mail4:after {
+  content: '\ea86';
+  @include iconStyle;
+}
+
+.amazon:after {
+  content: '\ea87';
+  @include iconStyle;
+}
+
+.google:after {
+  content: '\ea88';
+  @include iconStyle;
+}
+
+.facebook:after {
+  content: '\ea90';
+  @include iconStyle;
+}
+
+.instagram:after {
+  content: '\ea92';
+  @include iconStyle;
+}
+
+.whatsapp:after {
+  content: '\ea93';
+  @include iconStyle;
+}
+
+.youtube:after {
+  content: '\ea9e';
+  @include iconStyle;
+}
+
+.github:after {
+  content: '\eab0';
+  @include iconStyle;
+}
+
+.linkedin:after {
+  content: '\eac9';
+  @include iconStyle;
+}
+
+.pinterest:after {
+  content: '\ead2';
+  @include iconStyle;
+}
+
+.paypall:after {
+  content: '\ead8';
+  @include iconStyle;
+}
+
+.chrome:after {
+  content: '\ead9';
+  @include iconStyle;
+}
+
+.firefox:after {
+  content: '\eada';
+  @include iconStyle;
+}
+
+.edge:after {
+  content: '\eadc';
+  @include iconStyle;
+}
+
+.file-pdf:after {
+  content: '\eadf';
+  @include iconStyle;
+}
+
+.file-word:after {
+  content: '\eae1';
+  @include iconStyle;
+}
+
+.file-excel:after {
+  content: '\eae2';
+  @include iconStyle;
+}
+
+.chevron-down:after {
+  content: '\e902';
+  @include iconStyle;
+}
+
+.chevron-up:after {
+  content: '\e905';
+  @include iconStyle;
+}
+
+.chevron-left:after {
+  content: '\e903';
+  @include iconStyle;
+}
+
+.chevron-right:after {
+  content: '\e904';
+  @include iconStyle;
+}
+
+.thumbs-down:after {
+  content: '\e906';
+  @include iconStyle;
+}
+
+.thumbs-up:after {
+  content: '\e907';
+  @include iconStyle;
+}
+
+.toggle-left:after {
+  content: '\e908';
+  @include iconStyle;
+}
+
+.toggle-right:after {
+  content: '\e909';
+  @include iconStyle;
+}
+
+.X:after {
+  content: '\e90a';
+  @include iconStyle;
+}
+
+.notification:after {
+  content: '\e001';
+  @include iconStyle;
+}
+
+.confirmation:after {
+  content: '\e86c';
+  @include iconStyle;
+}
+
+.remove:after {
+  content: '\e15c';
+  @include iconStyle;
+}
+
+.error:after {
+  content: '\e000';
+  @include iconStyle;
+}
+
+.calendar:after {
+  content: '\e901';
+  @include iconStyle;
+}
+
+.help:after {
+  content: '\e887';
+  @include iconStyle;
+}
+
+.help_outline:after {
+  content: '\e8fd';
+  @include iconStyle;
+}

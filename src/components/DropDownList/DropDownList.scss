@@ -1,0 +1,132 @@
+@import '../../assets/styles/variable';
+
+.drop-down {
+  background-color: $color-background-white;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  width: 100%;
+
+  .dropdown-list {
+    display: flex;
+    position: relative;
+    .drop-down-arrow {
+      height: 20px;
+      position: absolute;
+      right: 12px;
+      top: calc(50% - 13px);
+      width: 20px;
+      &:after {
+        @include font-size-14;
+        color: black;
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    .drop-down-select {
+      @include font-size-16;
+      color: $dropdown-option-text;
+      display: inline-block;
+      cursor: pointer;
+      height: 32px;
+      line-height: 32px;
+      overflow: hidden;
+      padding: 0 $space-125 0 $space-025;
+      text-overflow: ellipsis;
+      text-decoration: none;
+      white-space: nowrap;
+      width: 100%;
+
+      &.is-form {
+        height: 40px;
+        line-height: 40px;
+      }
+
+      &:focus {
+        @include focus;
+      }
+
+      &.error {
+        border: 2px solid $error-border;
+
+        &:focus {
+          border: 2px solid $error-border;
+          outline: none;
+        }
+      }
+    }
+
+    .drop-down-select-light {
+      border: 1px solid $color-border-grey-40;
+      &:focus {
+        border: 2px solid $color-border-blue-40;
+      }
+    }
+
+    .drop-down-select-dark {
+      @include font-size-14;
+      border: 2px solid $color-border-blue-70;
+      border-radius: 8px;
+      color: $color-text-grey-55;
+      line-height: 28px;
+      padding: 0 $space-05 0 $space-068;
+
+      &:focus{
+        @include focus;
+      }
+    }
+  }
+
+  .options {
+    position: absolute;
+    margin-top: 2px;
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    z-index: 1000;
+
+    &.fixed-height {
+      height: 200px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+  }
+
+  .darkbg {
+    color: white;
+    background-color: $color-background-dark;
+  }
+
+  .lightbg {
+    border: 1px solid $color-border-grey-20;
+    color: black;
+    background-color: $color-background-white;
+  }
+}
+
+.dropdown-error-tooltip {
+  background-color: $error-tooltip-background;
+  border: 0;
+  box-shadow: none;
+  color: $error-tooltip-text;
+  min-width: auto;
+  padding: $space-05;
+  width: 100%;
+
+  &:after {
+    background-color: $error-tooltip-background;
+    border: 0;
+  }
+}
+
+@media only screen and (max-width: $zeroToSmall) {
+  .drop-down {
+    .dropdown-list{
+      .drop-down-arrow {
+        right: -5px;
+      }
+    }
+  }
+}

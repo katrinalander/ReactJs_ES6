@@ -1,0 +1,35 @@
+@keyframes spin { 100% {-webkit-transform: rotate(360deg); transform: rotate(360deg);} }
+
+.spinner {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.spinner-container {
+  display: inline-block;
+  height: 47px;
+  position: relative;
+  width: 47px;
+  will-change: transform;
+}
+
+.spinner-element {
+  left: 0;
+  position: absolute;
+  top: -1rem;
+  &::after {
+    animation: spin 780ms infinite linear;
+    border: .25rem solid #ccc;
+    border-right-color: #0092ff;
+    border-radius: 50%;
+    content: '\0020';
+    display: inline-block;
+    height: 3rem;
+    position: relative;
+    width: 3rem;
+  }
+}
+
+.hide-label {
+  color: transparent;
+}

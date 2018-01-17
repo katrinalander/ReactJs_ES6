@@ -1,0 +1,47 @@
+@import '../../assets/styles/variable';
+
+/* general */
+@mixin general {
+  .page-title-container {
+    position: relative;
+  }
+
+  page-title {
+    display: inline-block;
+  }
+
+  .page-quick-navigation {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+/* mobile first */
+.page {
+  padding: $space-1;
+}
+.page-title {
+  display: block;
+}
+.page-quick-navigation {
+  display: block;
+  margin: $space-1 0;
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+  @include general;
+}
+
+/* Small desktop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+  @include general;
+}
+
+/* Large desktop */
+@media only screen and (min-width: $mediumToLarge) {
+  @include general;
+}
+

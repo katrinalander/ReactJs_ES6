@@ -1,0 +1,83 @@
+@import '../../../assets/styles/variable';
+
+/* general */
+@mixin general {
+  .instrument-print {
+    display: inline-block;
+  }
+}
+
+/* mobile first */
+.instruments {
+  display: flex;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.instrument-actions {
+  flex: 1;
+  text-align: right;
+}
+
+.instrument-actions-container {
+  position: relative;
+  top: -4px;
+}
+
+.instrument-icon {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: $space-1;
+
+  &:after {
+    @include font-size-20;
+  }
+}
+
+.instrument-icon-disabled {
+  cursor: default;
+  display: inline-block;
+  margin-left: $space-05;
+  opacity: .5;
+
+  &:after {
+    @include font-size-20;
+  }
+}
+
+.instrument-print {
+  display: none;
+}
+
+.instrument-button {
+  @include font-size-14;
+  color: $link-text;
+  cursor: pointer;
+  border: 0px solid transparent;
+  background: none;
+  margin: 0 -6px;
+  &:focus{
+    outline: 1px dashed $focused-state-dashes-line;
+  }
+}
+
+.separator {
+  @include font-size-14;
+  color: $primary-text;
+  margin: 0 $space-05;
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and  (max-width: $smallToMedium){
+  @include general;
+}
+
+/* Small desctop */
+@media only screen and (min-width: $smallToMedium) and  (max-width: $mediumToLarge){
+  @include general;
+}
+
+/* Large Desctop */
+@media only screen and (min-width: $mediumToLarge){
+  @include general;
+}

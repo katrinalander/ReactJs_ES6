@@ -1,0 +1,141 @@
+@import '../../../assets/styles/variable';
+
+@mixin general {
+  .row-expandable-cell .row-expander-icon{
+    top: -5px;
+  }
+  .row-expandable-cell {
+    vertical-align: top;
+    max-width: 30px;
+    width: 30px;
+  }
+
+  tbody .expanded {
+    border-bottom: none;
+    background-color: $color-background-tan-02;
+  }
+
+  .rowDetails {
+    background-color: $color-background-tan-02;
+    padding: 15px;
+    border-left: 2px solid $color-border-blue-40;
+    border-bottom: 1px solid $color-border-grey-20;
+    td {
+      padding: $space-075 0;
+    }
+  }
+
+  .row-cells-container {
+    flex-direction: row;
+  }
+  .details-container {
+    border: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .details {
+    background-color: transparent;
+    border-left: 0;
+    padding: 0 0 $space-075 0;
+  }
+}
+
+/* Mobile first */
+dl.gridDefList {
+  border-bottom: 1px solid $color-border-grey-20;
+  dt, dd {
+    flex: 1;
+  }
+  dd {
+    text-align: right;
+  }
+}
+
+dl.gridDefList:hover {
+  background-color: $color-background-tan-02;
+}
+
+.detailsDef{
+  margin: 0 0 10px 0;
+  padding: 24px;
+  background-color: $color-background-tan-02;
+}
+
+.cell-check-number-container button {
+  display: none;
+}
+tbody tr.row {
+  border-bottom: 1px solid $color-border-grey-20;
+  &:hover {
+    background-color: $color-background-tan-02;
+  }
+}
+
+.row-cells-container{
+  display: flex;
+  flex-direction: column;
+  padding: $space-0125 0;
+}
+.row-expandable-cell{
+  .row-expandable-cell{
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+}
+.row-expander-link {
+  @include font-size-12;
+  color: $link-text;
+  cursor: pointer;
+  .row-expander-link-span {
+    display: inline-block;
+    margin-left: $space-025;
+  }
+}
+
+.row-expander-icon {
+  cursor: pointer;
+  position: relative;
+  top:-1px;
+  transition: transform .25s;
+  margin-left: 1px;
+
+  i:after {
+    color: $link-text;
+    @include font-size-12;
+  }
+  &.expanded {
+    transform: rotate(0deg);
+  }
+  &.collapsed {
+    transform: rotate(-90deg);
+  }
+}
+
+.details-container {
+  border-top: 1px solid $color-border-grey-20;
+  border-bottom: 1px solid $color-border-grey-20;
+  margin-left: -$space-1;
+  margin-right: -$space-1;
+  transition: max-height 300ms;
+}
+
+.details {
+  background-color: $color-background-tan-02;
+  border-left: 2px solid $color-border-blue-40;
+  padding: $space-1;
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+  @include general;
+}
+
+/* Small desktop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+  @include general;
+}
+
+/* Large desktop */
+@media only screen and (min-width: $mediumToLarge) {
+  @include general;
+}

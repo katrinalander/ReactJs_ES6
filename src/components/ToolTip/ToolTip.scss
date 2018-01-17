@@ -1,0 +1,89 @@
+@import '../../assets/styles/variable';
+
+$arrow-size: $space-05;
+$arrow-top: 40px;
+$border-size: 1px;
+$border-color: $color-border-grey-20;
+$margin: 0.7 * $arrow-size;
+$diff: $arrow-size / 2;
+
+.tooltip {
+  @include shadow;
+  @include font-size-14;
+  background-color: $color-background-tan-03;
+  border: 1px solid $color-border-grey-20;
+  max-width: 500px;
+  min-width: 200px;
+  padding: $space-05 $space-15 $space-05 $space-068;
+  position: absolute;
+  text-align: left;
+  font-weight: 400;
+  z-index: 2000;
+
+  &:after {
+    background-color: $color-background-tan-03;
+    border: 1px solid transparent;
+    content: '';
+    height: $arrow-size;
+    position: absolute;
+    transform: rotate(45deg);
+    width: $arrow-size;
+  }
+}
+.close {
+  font-size: 12px;
+  line-height: 12px;
+  position: absolute;
+  right: .3125rem;
+  top: .3125rem;
+
+  &:after {
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1px;
+  }
+}
+.top {
+  &:after {
+    top: calc(100% - #{$diff});
+    left: 25px;
+  }
+  &:after {
+    border-bottom-color: $border-color;
+    border-right-color: $border-color;
+    margin-left: -1 * $arrow-size;
+  }
+}
+.bottom{
+  &:after {
+    bottom: calc(100% - #{$diff});
+  }
+  &:after {
+    border-top-color: $border-color;
+    border-left-color: $border-color;
+    margin-left: -1 * $arrow-size;
+  }
+}
+.left {
+  &:after {
+    left: calc(100% - #{$diff});
+    top: $arrow-top - $margin;
+  }
+  &:after {
+    border-top-color: $border-color;
+    border-right-color: $border-color;
+    margin-top: -1 * $arrow-size;
+  }
+}
+.right {
+  margin-left: $arrow-size;
+  &:after {
+    right: calc(100% - #{$diff});
+    top: $arrow-top - $margin;
+  }
+  &:after {
+    border-bottom-color: $border-color;
+    border-left-color: $border-color;
+    margin-top: -1 * $arrow-size;
+  }
+}

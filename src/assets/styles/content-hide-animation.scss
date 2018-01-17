@@ -1,0 +1,10 @@
+@import 'animation.scss';
+
+@include keyframes(content-hide) {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

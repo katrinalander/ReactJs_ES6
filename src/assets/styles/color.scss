@@ -1,0 +1,129 @@
+$color-text-white: #FFFFFF;
+$color-text-grey-20: #cccccc;
+$color-text-grey-25: #bcbcbc;
+$color-text-grey-55: #717171;
+$color-text-grey-60: #666666;
+$color-text-grey-75: #414042;
+$color-text-blue-30: #6cc7ff;
+$color-text-blue-60: #126bc5;
+$color-text-blue-70: #0a4386;
+$color-text-blue-80: #0b6efd;
+$color-text-blue-90: #0092ff;
+$color-text-green-60: #2ca853;
+$color-text-green-70: #128842;
+$color-text-red-55: #bf2155;
+
+$color-background-white: #ffffff;
+$color-background-white-transparent-09: rgba(255,255,255,.95);
+$color-background-white-transparent-0: rgba(255,255,255,0);
+$color-background-grey-05: #f5f6f6;
+$color-background-grey-10: #ededed;
+$color-background-grey-15: #d6d6d6;
+$color-background-grey-25: #bcbcbc;
+$color-background-tan-02: #faf9f8;
+$color-background-tan-03: #f9f6f3;
+$color-background-tan-05: #f7f6f3;
+$color-background-tan-10: #ede9e3;
+$color-background-tan-15: #ddd5d0;
+$color-background-tan-20: #d8d2c7;
+$color-background-tan-45: #918c86;
+$color-background-red-55: #bf2155;
+
+$color-background-sidemenu-65: #595653;
+$color-background-dark: #3D3734;
+$color-background-dark-hover: #56504d;
+$color-background-light-hover: #f6f9f3;
+
+$color-background-dropdown-dark-hover: #56504d;
+$color-background-dropdown-light-hover: #f3f0e9;
+
+$color-branded-background-accent: #0a7ac9;
+$color-branded-background-header: #0b366a;
+
+$color-border-white: #fff;
+$color-border-grey-20: #cccccc;
+$color-border-grey-40: #959595;
+$color-border-grey-55: #717171;
+$color-border-grey-00: #000;
+$color-border-red-55: #bf2155;
+$color-border-blue-40: #0b6efd;
+$color-border-blue-60: #126bc5;
+$color-border-blue-70: #0a4386;
+
+$alert-border: $color-border-red-55;
+$error-border: $color-border-red-55;
+$control-border: $color-border-grey-40;
+$control-border-disabled: $color-border-grey-40;
+$divider-line: $color-border-grey-20;
+$link-pipe: $color-border-grey-40;
+$separator: $color-border-grey-40;
+$focused-state-dashes-line: $color-border-grey-55;
+$focused-state-dashes-line-white: $color-border-white;
+$global-navigation-hover-level-2-item: $color-border-grey-20;
+
+$color-shadow-black-20: rgba(0,0,0,0.2);
+$color-shadow-dark-blue: $color-border-blue-70;
+
+@mixin shadow {
+  box-shadow: 1px 2px 1px 1px $color-shadow-black-20;
+}
+
+/* Implement colors */
+
+$alert-text: $color-text-red-55;
+$error-text: $color-text-red-55;
+$primary-text: $color-text-grey-75;
+$primary-text-disabled: $color-text-grey-20;
+$secondary-text: $color-text-grey-55;
+$link-text: $color-text-blue-60;
+$dropdown-option-text: $color-text-grey-75;
+$dropdown-option-text-white: $color-text-white;
+
+$color-button-primary: #0b6efd;
+$color-button-primary-hover: #0a4386;
+$color-button-primary-tapped: #0092ff;
+$color-button-primary-disabled: #a9d5ed;
+
+$color-button-secondary: #d6d6d6;
+$color-button-secondary-hover: #bcbcbc;
+$color-button-secondary-tapped: #0092ff;
+$color-button-secondary-disabled: #e5e5e5;
+
+$color-button-tertiary-text: #666666;
+$color-button-tertiary-text-disabled: #d8d8d8;
+
+$color-button-tertiary-outline: #959595;
+$color-button-tertiary-outline-hover: #ededed;
+$color-button-tertiary-outline-tapped: #e5e5e5;
+$color-button-tertiary-outline-disabled: #d8d8d8;
+
+$color-button-tertiary: #ffffff;
+$color-button-tertiary-hover: #ededed;
+$color-button-tertiary-tapped: #e5e5e5;
+$color-button-tertiary-disabled: #ffffff;
+
+$global-navigation-background-color: $color-branded-background-header;
+
+$primary-text-dark-background: $color-text-white;
+
+$default-page-background: $color-background-white;
+
+$divider-line: $color-border-grey-20;
+
+$primary-text: $color-text-grey-75;
+
+$error-tooltip-background: $color-background-red-55;
+$error-tooltip-text: $color-text-white;
+$error-border: $color-border-red-55;
+
+$icon-text: $color-text-grey-60;
+$icon-hover: $color-text-blue-90;
+$icon-click: $color-text-blue-80;
+$icon-disabled: $color-text-grey-25;
+$global-navigation-icon-hover-state: $color-text-grey-20;
+$success-icon: $color-text-green-60;
+$calendar-border-color: $color-border-blue-70;
+$calendar-day-out-or-range-text-color: $color-text-grey-60;
+
+$focused-state-dashes-line: $color-border-grey-55;
+$focused-state-dashes-line-white: $color-border-white;

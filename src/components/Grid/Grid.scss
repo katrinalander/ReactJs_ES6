@@ -1,0 +1,30 @@
+@import '../../assets/styles/variable';
+
+/* Mobile first */
+.cell-check-number-container button{
+  display: none;
+}
+
+.gridTable {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.no-data-message{
+  border-bottom: 1px solid $color-border-grey-20;
+  margin: 0;
+  padding: $space-1;
+  text-align: center;
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+}
+
+/* Small desktop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+}
+
+/* Large desktop */
+@media only screen and (min-width: $mediumToLarge) {
+}

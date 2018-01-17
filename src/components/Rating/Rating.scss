@@ -1,0 +1,16 @@
+@import '../../assets/styles/variable';
+
+.react-rater {
+  display: inline-block;
+  line-height: normal;
+  > * {
+    display: inline-block;
+  }
+}
+
+.result {
+  color: $secondary-text;
+  @include font-size-14;
+  font-style: italic;
+  margin-left: $space-025;
+}

@@ -1,0 +1,100 @@
+@import '../../../assets/styles/variable';
+@import '../../../assets/styles/content-show-animation';
+@import '../../../assets/styles/content-hide-animation';
+@import '../../../assets/styles/icon-show-animation';
+@import '../../../assets/styles/width-animation';
+
+.notification-container {
+  margin: $space-025 0 $space-1 0;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.notification {
+  @include animation('content-show .3s ease .3s forwards');
+  flex: 1;
+  opacity: 0;
+
+  &.information {
+    margin: 0;
+  }
+}
+
+.message {
+  @include font-size-20;
+  @include open-sans-light;
+  margin: 0;
+
+  &.alert {
+    color: $alert-text;
+  }
+  &.confirmation {
+    color: $primary-text;
+  }
+  &.information {
+    color: $primary-text;
+  }
+}
+
+.annotation {
+  @include font-size-14;
+  color: $secondary-text;
+  margin: $space-025 0 0 0;
+
+  &.information {
+    margin: 0;
+  }
+}
+
+.icon-container {
+  @include animation('icon-show .3s cubic-bezier(.1,.27,.32,1.72) .3s forwards');
+  margin-right: $space-05;
+  opacity: 0;
+}
+
+.icon {
+  I:after {
+    @include font-size-20;
+  }
+
+  &.alert{
+    I:after {
+      color: $alert-text;
+
+    }
+  }
+
+  &.confirmation{
+    I:after {
+      color: $color-text-green-60;
+    }
+  }
+}
+
+.tracker-container {
+  @include animation('content-hide .7s ease .7s forwards');
+  @include animation-delay('1.5s');
+  background-color: $color-background-grey-25;
+  height: 5px;
+  margin: $space-125 0 0 0;
+  width: 100%;
+
+  .tracker {
+    @include animation('width .7s ease .7s forwards');
+    background-color: $color-text-green-60;
+    height: 5px;
+    width: 0%;
+  }
+}
+
+@media only screen and (max-width: $zeroToSmall) {
+  .notification-container {
+    margin: 0 0 $space-075 0;
+  }
+
+  .tracker-container {
+    margin: $space-1 0 0 0;
+  }
+}

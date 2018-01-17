@@ -1,0 +1,132 @@
+@import '../../assets/styles/variable';
+
+/* general */
+@mixin general {
+  .image-container {
+    &.vertical {
+      &:first-child {
+        margin-bottom: $space-05;
+      }
+    }
+
+    &.horizontal {
+      width: 50%;
+
+      &:first-child {
+        margin-bottom: 0;
+        margin-right: $space-05;
+      }
+
+      &:last-child {
+        margin-left: $space-05;
+      }
+    }
+  }
+}
+
+/* Mobile first */
+.container {
+  display: inline-block;
+  width: 100%;
+}
+
+.image-container {
+  display: block;
+  flex-direction: column;
+
+  &:first-child {
+    margin-bottom: $space-075;
+  }
+}
+
+.image-wrapper {
+  box-sizing: border-box;
+  border: 1px solid $color-border-grey-20;
+  flex: 1;
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+
+  &:after {
+    padding-top: 40%;
+    display: block;
+    content: '';
+  }
+}
+
+.image-wrapper-scroll {
+  height: 100%;
+  overflow: auto;
+  position: absolute;
+  user-select: none;
+  width: 100%;
+
+  IMG {
+    font-size: 0;
+    height: 100%;
+    left:0;
+    position: absolute;
+    top:0;
+    vertical-align: top;
+    user-select: none;
+    width: 100%;
+  }
+}
+
+.image-rotated-0 {
+  transform: none;
+}
+.image-rotated-90 {
+  transform: rotate(90deg);
+}
+.image-rotated-180 {
+  transform: rotate(180deg);
+}
+.image-rotated-270 {
+  transform: rotate(270deg);
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+  .image-container{
+    margin: 0 auto;
+    width: calc(#{$zeroToSmall} - 2 * (#{$space-05} + #{$space-1}) - #{$space-1});
+  }
+}
+
+/* Small desctop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+  .image-container{
+    margin: 0 auto;
+    width: calc(#{$smallToMedium} - 2 * (#{$space-05} + #{$space-1}) - #{$space-1});
+
+    &.vertical {
+      flex-direction: column;
+    }
+
+    &.horizontal {
+      flex-direction: row;
+    }
+  }
+  @include general;
+}
+
+/* Large desctop */
+@media only screen and (min-width: $mediumToLarge) {
+  .image-container{
+    margin: 0 auto;
+    width: calc(#{$mediumToLarge} - 2 * (#{$space-05} + #{$space-1}) - #{$space-1});
+
+    &.vertical {
+      flex-direction: column;
+    }
+
+    &.horizontal {
+      flex-direction: row;
+    }
+  }
+  @include general;
+}

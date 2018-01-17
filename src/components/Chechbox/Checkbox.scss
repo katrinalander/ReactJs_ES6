@@ -1,0 +1,68 @@
+@import '../../assets/styles/variable';
+
+.checkbox {
+  border: 1px solid $control-border;
+  border-radius: 3px;
+  cursor: pointer;
+  float: left;
+  height: 20px;
+  margin-left: -20px;
+  width: 20px;
+
+  &.disabled {
+    border: 1px solid $control-border-disabled;
+    cursor: default;
+    outline: none;
+  }
+}
+
+.select-checkbox {
+  background-color: $color-button-primary;
+  border: 1px solid $color-button-primary;
+  font-family: 'icomoon';
+
+  &:after {
+    color: $color-border-white;
+    content: '\ea10';
+    @include font-size-16;
+  }
+
+  &.disabled {
+    background-color: $color-background-white;
+
+    &:after {
+      color: $control-border-disabled;
+      content: '\ea11';
+      @include font-size-16;
+    }
+  }
+}
+
+.label-checkbox {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+input[type='checkbox'] {
+  cursor: pointer;
+  height: 20px;;
+  float: left;
+  opacity: 0;
+  width: 20px;
+  z-index: 1;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus + .checkbox {
+    outline: 1px solid $focused-state-dashes-line;
+  }
+
+  &:checked + .checkbox:after {
+    color: $color-background-white;
+    content: '\ea10';
+    @include font-size-16;
+  }
+}
+

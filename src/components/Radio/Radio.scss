@@ -1,0 +1,80 @@
+@import '../../assets/styles/variable';
+
+.radio {
+  cursor: pointer;
+  position: relative;
+
+  input[type=radio] {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    height: 0.85rem;
+    width: 0.85rem;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  input[type=radio]:checked + div {
+    color: transparent;
+    font-size: 2.25rem;
+    height: 0;
+    left: 1.45rem;
+    margin-left: -1.4rem;
+    position: relative;
+    top: -.85rem;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+  }
+
+  .selectedRadiobuttonContainer {
+    display: none;
+    cursor: auto;
+  }
+
+  input[type=radio]:focus ~ label .radiobuttonOuterCircle {
+    outline: $color-border-grey-55 dashed .0625rem;
+  }
+
+  .radiobuttonOuterCircle {
+    width: 0.85rem;
+    height: 0.85rem;
+    border: .0625rem solid $control-border;
+    border-radius: 50%;
+    padding: .19rem;
+    background-color: $color-background-white;
+  }
+
+  #labelTest .radiobuttonInnerCircle {
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+    border: .0625rem solid $control-border;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  input[type=radio]:checked ~ label .radiobuttonInnerCircle {
+    background-color: $color-border-blue-40;
+    border-color: $color-border-blue-40;
+  }
+
+  label {
+    display: inline-flex;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .radiobuttonLabelContent {
+    padding-left: .5rem;
+    width: 100%;
+  }
+}
+
+.horizontal-radio {
+  display: inline-block;
+  margin-left: $space-1;
+}
+.vertical-radio {
+  margin-top: $space-1/2;
+}

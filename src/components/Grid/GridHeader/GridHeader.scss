@@ -1,0 +1,55 @@
+@import '../../../assets/styles/variable';
+
+@mixin general {
+  .header {
+    border-bottom: 2px solid $color-border-grey-20;
+    display: table-header-group;
+    vertical-align: bottom;
+  }
+  .header-container {
+    @include open-sans-bold;
+    @include font-size-14;
+    color: $secondary-text;
+    padding: $space-033 $space-05;
+    text-align: left;
+  }
+  .header-sortable-container {
+    color: $color-text-grey-75;
+  }
+  .icon-sort {
+    padding: 0;
+    position: relative;
+    top: 1px;
+
+    i {
+      display: inline;
+    }
+    i:after {
+      @include font-size-14;
+    }
+  }
+}
+
+/* Mobile first */
+.header {
+  display: none;
+}
+.header-expandable-cell {
+  max-width: 30px;
+  width: 30px;
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+  @include general;
+}
+
+/* Small desktop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+  @include general;
+}
+
+/* Large desktop */
+@media only screen and (min-width: $mediumToLarge) {
+  @include general;
+}

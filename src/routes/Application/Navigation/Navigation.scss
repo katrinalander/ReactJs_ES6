@@ -1,0 +1,48 @@
+@import '../../../assets/styles/variable';
+
+.navigation{
+  .navigation-list {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+  }
+
+  .navigation-item {
+    display: inline-block;
+    padding: $space-05 $space-1;
+
+    .navigation-link {
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  .top-navigation-list {
+    background-color: $global-navigation-background-color;
+
+    .navigation-item {
+      position: relative;
+
+      .navigation-link {
+        color: $primary-text-dark-background;
+        outline:none;
+      }
+    }
+  }
+
+  .sub-navigation-list {
+    background-color: $default-page-background;
+    border-bottom: $space-0125 solid $divider-line;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+
+    .navigation-item {
+      .navigation-link {
+        outline: none;
+        color: $primary-text;
+      }
+    }
+  }
+}

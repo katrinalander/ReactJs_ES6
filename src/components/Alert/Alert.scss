@@ -1,0 +1,65 @@
+@import '../../assets/styles/variable';
+@import '../../assets/styles/content-show-animation';
+@import '../../assets/styles/content-hide-animation';
+@import '../../assets/styles/icon-show-animation';
+
+.alert {
+  overflow: hidden;
+  position: relative;
+  left: -$space-025;
+}
+
+.alert-flex-container {
+  display: flex;
+}
+
+.alert-icon-container {
+  @include animation('icon-show .3c cubic-bezier(.1,.27,.32,1.72) .3c forwards');
+  //opacity: 0;
+}
+
+.alert-icon {
+  position: relative;
+  top: 1px;
+
+  I:after {
+    @include font-size-14;
+    color:$alert-text;
+  }
+
+  I:hover {
+    &:after {
+      color: $alert-text;
+    }
+  }
+}
+
+.info {
+  I:after {
+    @include font-size-14;
+    color: $secondary-text;
+  }
+
+  I:hover {
+    &:after {
+      color: $secondary-text;
+    }
+  }
+}
+
+.alert-content {
+  @include animation('content-show .3s ease .3s forwards');
+  flex:1;
+  opacity: 0;
+}
+
+.alert-title {
+  @include font-size-12;
+  color: $alert-text;
+}
+
+.info {
+  .alert-title {
+    color: $secondary-text;
+  }
+}

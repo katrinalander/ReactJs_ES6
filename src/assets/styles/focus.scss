@@ -1,0 +1,3 @@
+@mixin focus {
+  outline: 1px dashed $focused-state-dashes-line;
+}

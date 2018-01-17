@@ -1,0 +1,81 @@
+@import '../../assets/styles/variable';
+
+.button {
+  @include open-sans-regular;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  padding: 0 $space-1;
+  transition: background-color .4s ease, border .4s ease;
+  white-space: nowrap;
+
+  &:focus {
+    outline: 1px dashed $focused-state-dashes-line;
+  }
+
+  &.primary {
+    background-color: $color-button-primary;
+    color: $primary-text-dark-background;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $color-button-primary-hover;
+    }
+
+    &.disabled {
+      background-color: $color-button-primary-disabled;
+
+      &:hover {
+        background-color: $color-button-primary-disabled;
+      }
+    }
+  }
+
+  &.secondary {
+    background-color: $color-button-secondary;
+    color: $primary-text;
+
+    &:hover {
+      background-color: $color-button-secondary-hover;
+    }
+
+    &.disabled {
+      background-color: $color-button-secondary-disabled;
+
+      &:hover {
+        background-color: $color-button-secondary-disabled;
+      }
+    }
+  }
+
+  &.tertiary {
+    background-color: $color-button-tertiary;
+    border: 1px solid $color-button-tertiary-outline;
+    color: $color-button-tertiary-text;
+
+    &:hover {
+      background-color: $color-button-tertiary-hover;
+      border: 1px solid $color-button-tertiary-outline-hover;
+    }
+
+    &.disabled {
+      background-color: $color-button-tertiary-disabled;
+      border: 1px solid $color-button-tertiary-outline-disabled;
+      color: $color-button-tertiary-text-disabled;
+
+      &:hover {
+        background-color: $color-button-tertiary-disabled;
+        border: 1px solid $color-button-tertiary-outline-disabled;
+        color: $color-button-tertiary-text-disabled;
+      }
+    }
+  }
+}
+
+/* Mobiles */
+@media only screen and (max-width: $zeroToSmall) {
+  .button-container {
+    margin-left: 0;
+  }
+}

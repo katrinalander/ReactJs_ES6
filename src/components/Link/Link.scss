@@ -1,0 +1,35 @@
+@import '../../assets/styles/variable';
+
+.link {
+  color: $link-text;
+  text-decoration: none;
+
+  &.disabled {
+    color: $primary-text-disabled;
+  }
+  &:focus {
+    @include focus;
+  }
+}
+
+.link-icon {
+  padding-right: 0;
+
+  I{
+    width: 8px;
+    &:after {
+      @include open-sans-bold;
+      color: $link-text;
+      font-size: 14px;
+      position: relative;
+    }
+  }
+
+  &.disabled {
+    I{
+      &:after {
+        color: $primary-text-disabled;
+      }
+    }
+  }
+}

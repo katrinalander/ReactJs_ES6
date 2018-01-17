@@ -1,0 +1,26 @@
+@import '../../../assets/styles/variable';
+
+.rater-star:before {
+  cursor: pointer;
+  font-family: 'icomoon';
+  color: $color-border-blue-60;
+  position: relative;
+  content: '\e9d7';
+}
+.will-be-active:before {
+  content: '\e9d9';
+}
+.active:before {
+  color: $color-border-blue-60;
+  content: '\e9d9';
+}
+.active-half:before {
+  color: $color-border-blue-60;
+  content: '\e9d8';
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+}
+.disabled:before {
+  cursor: default;
+}

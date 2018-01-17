@@ -1,0 +1,62 @@
+@import '../../assets/styles/variable';
+
+.input-container {
+  position: relative;
+}
+
+.input-currency-sign {
+  background-color: $color-background-white;
+  left: 2px;
+  line-height: 26px;
+  padding: 0 $space-025;
+  position: absolute;
+  top: 4px;
+
+  &.is-form {
+    line-height: 34px;
+  }
+}
+
+.input-error-tooltip {
+  background-color: $error-tooltip-background;
+  border: 0;
+  box-shadow: none;
+  color: $error-tooltip-text;
+  padding: $space-05;
+  width: 100%;
+
+  &:after {
+    background-color: $error-tooltip-background;
+    border: 0;
+  }
+}
+
+.input {
+  @include font-size-14;
+  background-color: $color-background-white;
+  border: 1px solid $color-border-grey-40;
+  display: inline-block;
+  height: 32px;
+  padding: 0 $space-025;
+  text-align: left;
+  width: 100%;
+
+  &.is-form {
+    height: 40px;
+  }
+
+  &.is-currency {
+    padding-left: $space-1;
+  }
+
+  &.error {
+    border: 2px solid $error-border;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &:focus {
+    outline: 2px solid $color-border-blue-40;
+  }
+}

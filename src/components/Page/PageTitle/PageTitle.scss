@@ -1,0 +1,28 @@
+@import '../../../assets/styles/variable';
+
+@mixin general {
+  .page-title {
+    padding-bottom: 0;
+  }
+}
+
+.page-title {
+  @include header-second-light-background;
+  padding-bottom: $space-021;
+  margin: $space-025 0 $space-125 0;
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+  @include general;
+}
+
+/* Small desctop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+  @include general;
+}
+
+/* Large Desctop */
+@media only screen and (min-width: $mediumToLarge) {
+  @include general;
+}

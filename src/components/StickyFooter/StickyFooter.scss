@@ -1,0 +1,69 @@
+@import '../../assets/styles/variable';
+
+.sticky-footer {
+  background-color: $default-page-background;
+  bottom: 0;
+  display: flex;
+  left: 0;
+  overflow: hidden;
+  padding: $space-1;
+  position: fixed;
+  width:100%;
+  border-top:1px solid #d5dbdb;
+  box-shadow: 0 -1px 4px rgba(0,0,0,.35);
+
+  .cells-container {
+    flex:1;
+    display:flex;
+  }
+
+  .buttons-container {
+    margin-right: 30px;
+  }
+
+  .cell {
+    flex: 1;
+    margin: 0 $space-1 0 0;
+    .value {
+      @include font-size-20;
+      color: $primary-text;
+    }
+    .title {
+      @include font-size-14;
+      color: $secondary-text;
+    }
+  }
+}
+
+/* Small desktop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+  .sticky-footer {
+    display: block;
+    .cell {
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .button-container {
+      margin-top: $space-075;
+      text-align: right;
+    }
+  }
+}
+
+/* general */
+@mixin general {
+  .sticky-footer{
+    display: none;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+  @include general;
+}
+
+/* Mobile */
+@media only screen and (max-width: $zeroToSmall) {
+  @include general;
+}

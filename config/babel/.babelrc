@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "es2015",
+    "react",
+    "airbnb",
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "react-hot-loader/babel"
+  ],
+  "env": {
+    "hot": {
+      "presets": [
+        "react-hmre"
+      ]
+    }
+  }
+}

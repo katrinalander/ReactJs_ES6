@@ -1,0 +1,30 @@
+@import '../../../assets/styles/variable';
+
+@mixin general {
+  .butn-submit {
+    margin-right: 18px;
+    text-align: right;
+    width: 30%;
+    display: inline-block;
+  }
+  .frm-login {
+    top:40%;
+    margin-left: 25%;
+    position: absolute;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+  @include general;
+}
+
+/* Small desktop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+  @include general;
+}
+
+/* Large desktop */
+@media only screen and (min-width: $mediumToLarge) {
+  @include general;
+}

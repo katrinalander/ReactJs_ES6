@@ -1,0 +1,42 @@
+@import '../../../assets/styles/variable';
+
+@mixin general {
+  .form-field {
+    display: flex;
+    margin-bottom: $space-075;
+  }
+  .form-field-label {
+    color: $primary-text;
+    line-height: 40px;
+    margin-right: $space-075;
+    text-align: right;
+    width: 30%;
+  }
+  .form-field-label-error {
+    @include open-sans-bold;
+    color: $error-text;
+  }
+  .form-field-control {
+    flex: 1;
+  }
+}
+
+/* Mobile screen */
+.form-field {
+  margin-bottom: $space-1;
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+  @include general;
+}
+
+/* Small desktop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+  @include general;
+}
+
+/* Large desktop */
+@media only screen and (min-width: $mediumToLarge) {
+  @include general;
+}

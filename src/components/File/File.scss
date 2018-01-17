@@ -1,0 +1,30 @@
+@import '../../assets/styles/variable';
+
+.file-container {
+  position: relative;
+}
+
+.file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+
+  &:focus + BUTTON {
+    outline: 1px dashed $focused-state-dashes-line;
+  }
+}
+
+.file-name {
+  color: $primary-text;
+  margin-left: $space-1;
+}
+
+.file-alert {
+  margin-left: $space-1;
+  overflow: visible;
+  position: relative;
+  white-space: nowrap;
+}

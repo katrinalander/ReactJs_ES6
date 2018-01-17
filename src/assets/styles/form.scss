@@ -1,0 +1,10 @@
+@import 'variable';
+
+.form-control-container {
+  display: inline-block;
+  margin-right: $space-075;
+}
+.form-button-container {
+  margin-top: $space-125;
+  padding-left: calc(30% + #{$space-075});
+}

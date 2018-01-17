@@ -1,0 +1,32 @@
+@import '../../assets/styles/variable';
+
+@mixin general {
+  .form {
+    margin: $space-1 auto 0;
+    width: 75%;
+  }
+}
+
+/* Mobile screen */
+.form {
+  margin: 0;
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+  @include general;
+
+  .form{
+    width: 90%;
+  }
+}
+
+/* Small desktop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+  @include general;
+}
+
+/* Large desktop */
+@media only screen and (min-width: $mediumToLarge) {
+  @include general;
+}

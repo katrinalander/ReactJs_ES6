@@ -1,0 +1,69 @@
+@import '../../../assets/styles/variable';
+
+@mixin general {
+  .cell-container {
+    display: block;
+  }
+  .cell-title {
+    display: none;
+  }
+  .cell {
+    vertical-align: top;
+    @include font-size-16;
+    flex: 1;
+    padding: $space-05;
+    text-align: left;
+    word-wrap: break-word;
+  }
+  td.cell-checkbox{
+    margin: 0;
+    top:-5px;
+  }
+}
+
+/* Mobile first */
+.list {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0;
+}
+.checkbox{
+  display: none;
+}
+.cell-container{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.cell-title {
+  @include open-sans-bold;
+  @include font-size-14;
+  color: $secondary-text;
+  display: block;
+  flex: 1;
+  padding: $space-025 0;
+  text-align: left;
+}
+.cell {
+  @include font-size-16;
+  flex: 1;
+  padding: $space-025 0;
+  text-align: right;
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+  @include general;
+}
+
+/* Small desktop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+  @include general;
+}
+
+/* Large desktop */
+@media only screen and (min-width: $mediumToLarge) {
+  @include general;
+}

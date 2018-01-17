@@ -1,0 +1,14 @@
+@import 'animation.scss';
+
+@include keyframes(icon-show) {
+  0% {
+    -webkit-transform: scale(.66, .66);
+    transform: scale(.66, .66);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}

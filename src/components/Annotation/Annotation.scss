@@ -1,0 +1,16 @@
+@import '../../assets/styles/variable';
+
+.info-icon {
+  cursor: pointer;
+  margin-left: 4px;
+  &:after {
+    @include font-size-16;
+    color: $color-border-grey-40;
+  }
+}
+
+.info-icon-hover {
+  &:after {
+    color: $color-text-grey-60;
+  }
+}

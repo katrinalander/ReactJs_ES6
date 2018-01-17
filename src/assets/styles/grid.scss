@@ -1,0 +1,283 @@
+@import '/variable';
+
+@mixin general {
+  .hiddenCol {
+    opacity: 0;
+  }
+  .row-expanded {
+    background-color: $color-background-tan-02;
+    border-left: 2px solid $color-border-blue-40;
+    border-bottom: 1px solid $color-border-grey-20;
+    border-top: 1px solid $color-border-grey-20;
+    margin-top: -1px;
+    margin-left: -$space-1;
+    margin-right: -$space-1;
+    padding-left: calc(#{$space-1} - 2px);
+    padding-right: $space-1;
+
+    &:first-child {
+      border-top: 2px solid $color-border-grey-20;
+      margin-top: -2px;
+    }
+  }
+
+  th.cell-checkbox{
+    width: 44px;
+  }
+
+  .cell-checkbox {
+    input[type='checkbox'] {
+      margin: 0;
+    }
+    label{
+      margin: 0;
+    }
+  }
+
+  .cell-decision-editable {
+    flex: none;
+    width: 170px;
+  }
+}
+
+/* Mobile First */
+.row-expanded {
+  background-color: $default-page-background;
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+  margin-top: 0;
+}
+.column-margin {
+  margin-left: $space-05;
+}
+.field-sample {
+  word-wrap: break-word;
+  width: 25%;
+}
+.field-name {
+  width: 15%;
+}
+.cell-alert {
+  color: $alert-text;
+}
+.cell-account {
+  flex:2;
+}
+.cell-account-exception-summary {
+  width: 250px;
+}
+.cell-payee {
+  flex: 2;
+}
+.cell-fixed {
+  flex: none;
+}
+.cell-cut-off-time {
+  color: $alert-text;
+  margin: 0;
+}
+table thead .cell-align-right, table tbody .cell-align-right {
+  justify-content: flex-end;
+  text-align: right;
+}
+.cell-check-number-container {
+  position: relative;
+  top: -5px;
+  white-space: nowrap;
+}
+.cell-check-number-icon {
+  margin-left: $space-025;
+  position: relative;
+  top: 4px;
+  I:after {
+    font-size: 20px;
+    line-height: 15px;
+  }
+}
+.check-imafe-container {
+  text-align: center;
+}
+.cell-decision-editable {
+  flex: 1;
+  overflow: visible;
+  width: auto;
+}
+.cell-adjust-amount {
+  justify-content: flex-end;
+  text-align: right;
+  width: 200px;
+}
+.cell-adjust-amount-container {
+  display: flex;
+  flex-direction: row;
+}
+.cell-adjust-amount-input {
+  flex:1;
+}
+.cell-adjust-amount-link {
+  margin: $space-025 0 0 $space-025;
+}
+.cell-pending-link {
+  @include open-sans-bold;
+}
+.dropdown-decision {
+  width: 150px;
+}
+.cell-link{
+  @include font-size-14;
+  color: $link-pipe;
+}
+.cell-overflow-visible {
+  overflow: visible;
+}
+.cell-order-field {
+  overflow: visible;
+  display: inline-block;
+  width: $space-15;
+}
+.cell-data-format {
+  flex: 1.5;
+}
+.cell-justify {
+  width: 200px;
+}
+.cell-position {
+  position: relative;
+  width: 160px;
+}
+.cell-length {
+  width: 13%;
+}
+.cell-account{
+  max-width: 400px;
+}
+.cell-field-name {
+  display: inline-block;
+  margin-left: $space-05;
+  vertical-align: middle;
+}
+.input-order-container {
+  display: inline-block;
+  width: 50px;
+  .inpt-order-error {
+    min-width: 150px;
+    &:after {
+      left: 32px;
+    }
+  }
+}
+.inpt-transaction-indicator {
+  display: inline-block;
+  margin-left: $space-05;
+  width: 50px;
+}
+.format-container {
+  min-height: 32px;
+  text-transform: capitalize;
+  width: 100%;
+}
+.header-format-container {
+  width: 153px;
+}
+.inpt-position-container {
+  width: 153px;
+}
+.inpt-start-position-container {
+  display: inline-block;
+  width: 70px;
+}
+.inpt-start-position-error {
+  background-color: $error-tooltip-background;
+  border: 0;
+  box-shadow: none;
+  color: $error-tooltip-text;
+  min-width: 153px;
+  padding: $space-05;
+  width: 153px;
+  &:after {
+    background-color: $error-tooltip-background;
+    border:0;
+  }
+}
+
+.overlap-position-error {
+  background-color: $error-tooltip-background;
+  border: 0;
+  box-shadow: none;
+  color: $error-tooltip-text;
+  min-width: 153px;
+  padding: $space-05;
+  width: 153px;
+  &:after{
+    background-color: $error-tooltip-background;
+    border: 0;
+    margin-left: -45px;
+  }
+}
+
+.inpt-position-error {
+  INPUT {
+    border: 2px solid $error-border;
+    &:focus {
+      outline: 2px solid $error-border;
+    }
+  }
+}
+
+.inpt-finish-position-container {
+  display: inline-block;
+  margin-left: $space-05;
+  width: 70px;
+  .inpt-finish-position-error {
+    min-width: 150px;
+  }
+}
+
+.header-position-container {
+  overflow: visible;
+  width: 160px;
+}
+
+.header-cut-off-time-container {
+  color: $color-text-grey-75;
+  i {
+    display: inline;
+  }
+  i:after {
+    @include font-size-12;
+    color: $color-text-grey-75;
+  }
+  &:hover {
+    i:after {
+      color: $color-text-grey-75;
+    }
+  }
+}
+
+.alert-in-cell {
+  display: block;
+  max-width: 350px;
+}
+.tooltip-in-cell {
+  min-width: 100%;
+  text-align: left;
+}
+.transaction-indicator-container {
+  text-transform: none;
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+  @include general;
+}
+
+/* Small desktop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+  @include general;
+}
+
+/* Large desktop */
+@media only screen and (min-width: $mediumToLarge) {
+  @include general;
+}

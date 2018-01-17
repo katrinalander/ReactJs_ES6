@@ -1,0 +1,42 @@
+@import '../../assets/styles/variable';
+@import '../../assets/styles/fade-up-animation';
+
+.container {
+  @include animation('fade-up .7s ease-out 0s none');
+  align-items: center;
+  background-color: $default-page-background;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left:0;
+  position: fixed;
+  right: 0;
+  top:0;
+  z-index: 1000;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  @include font-size-20;
+  @include open-sans-light;
+  color: $primary-text;
+  margin: 0 0 $space-125 0;
+}
+
+.message {
+  @include  font-size-16;
+  @include open-sans-light;
+  color: $secondary-text;
+}
+
+.button-container {
+  @include  animation('fade-up-buttons 1.05s ease 0s forwards');
+  margin-top: $space-175;
+  margin-right: -$space-1;
+  .button {
+    margin-right: $space-1;
+  }
+}

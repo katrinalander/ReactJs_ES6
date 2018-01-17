@@ -1,0 +1,45 @@
+@import '../../assets/styles/variable';
+
+.text-area-container {
+  position: relative;
+}
+
+.text-area-error-tooltip {
+  background-color: $error-tooltip-background;
+  border: 0;
+  box-shadow: none;
+  color: $error-tooltip-text;
+  min-width: auto;
+  padding: $space-05;
+  width: 100%;
+
+  &:after {
+    background-color: $error-tooltip-background;
+    border: 0;
+  }
+}
+
+.text-area {
+  @include font-size-14;
+  background-color: $color-background-white;
+  border: 1px solid $color-border-grey-40;
+  display: inline-block;
+  height: 100px;
+  padding: 0 $space-025;
+  text-align: left;
+  width: 100%;
+
+  &.is-form {
+    height: 100px;
+  }
+  &.error {
+    border: 2px solid$error-border;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &:focus {
+    outline: 2px solid $color-border-blue-40;
+  }
+}

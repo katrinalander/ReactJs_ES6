@@ -1,0 +1,29 @@
+@import '../../assets/styles/variable';
+
+.horizontal-radio {
+  display: inline-block;
+  margin-left: $space-1;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.vertical-radio {
+  margin-top: $space-05;
+}
+
+.radiogroup-error-tooltip {
+  background-color: $error-tooltip-background;
+  border: 0;
+  box-shadow: none;
+  color: $error-tooltip-text;
+  min-width: auto;
+  padding: $space-05;
+  width: 100%;
+
+  &:after {
+    background-color: $error-tooltip-background;
+    border: 0;
+  }
+}
