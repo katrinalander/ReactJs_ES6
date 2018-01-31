@@ -9,7 +9,7 @@ import Annotation from '../../components/Annotation';
 import Page from '../../components/Page';
 import Button from '../../components/Button';
 import Alert from '../../components/Alert';
-import Checkbox from '../../components/Chechbox';
+import Checkbox from '../../components/Checkbox';
 import Image from '../../components/Image';
 import DropDownList from '../../components/DropDownList';
 import DropDownOption from '../../components/DropDownOption';
@@ -21,6 +21,8 @@ import Modal from '../../components/Modal';
 import Panel from '../../components/Panel';
 import StickyFooter from '../../components/StickyFooter';
 import Rating from '../../components/Rating';
+import QuickNavigation from '../../components/QuickNavigation';
+import Grid from '../../components/Grid';
 
 import styles from './Components.scss'
 
@@ -72,6 +74,25 @@ class Components extends Component {
     @autobind handleHideNotification() {
         this.notification = null;
     }
+
+    gridData = {
+        columns: [
+            {title:'0ne',field:'one'},
+            {title:'Two',field:'two'},
+            {title:'Three',field:'three'},
+            {title:'Four',field:'four'},
+            {title:'Five',field:'five'}
+        ],
+        data: [
+            {one:1,two:2,three:3, four: 4, five: 5},
+            {one:2,two:3,three:4, four: 5, five: 6},
+            {one:3,two:4,three:5, four: 6, five: 7}
+        ],
+        loading:false,
+        expanded: true,
+        selected:[],
+        isAllSelected: false
+    };
 
     /* Icons */
     renderIcons() {
@@ -233,7 +254,7 @@ class Components extends Component {
 
     render() {
         const annotation = this.renderAnnotation();
-        const { notification } = this;
+        const { notification, gridData } = this;
         const icons = this.renderIcons();
         const image = this.renderImage();
         const modal = this.renderModal();
@@ -258,8 +279,10 @@ class Components extends Component {
                     <Button type="tertiary" onClick={this.handleShowAlert}>Show Alert Notification</Button>
                     <Button onClick={this.handleHideNotification}>Hide Notification</Button>
                 </div>
-                <h2>!!! page components !!!</h2>
-                    <Annotation content={(<span>Second annotation example</span>)} position="top" title="Title example" />
+                <h3>Quick Navigation: </h3>
+                <QuickNavigation/>
+
+                <Annotation content={(<span>Second annotation example</span>)} position="top" title="Title example" />
                 <Input isRequired={true} type="currency" errorMessage="ERROR!!!" isToolTipAvailable={true} placeholder="please enter something..."/>
                 <Alert type="alert">Test alert</Alert>
                 <Alert type="info">Test info alert</Alert>
@@ -267,6 +290,9 @@ class Components extends Component {
 
                 <h3>Checkbox: </h3>
                 <Checkbox label="Yes"/>
+
+                <h3>Grid: </h3>
+                <Grid {...gridData}/>
 
                 <Panel title="List of icons" expanded={false}>
                     <div>

@@ -1,0 +1,39 @@
+{
+  "summaries": {
+    "id": "exceptionSummary",
+    "approvedCount": 0,
+    "pendingCount": 40,
+    "reviewedCount": 35,
+    "reviewingCount": 25,
+    "exceptionPending": "pending",
+    "totalExceptionCount": 100,
+    "exceptionViewList": [
+      {
+        "id": 4667799101,
+        "groupId": "FTSI",
+        "accountName": "Commercial Checking",
+        "accountNumber": 4667799101,
+        "accountStatus": "1",
+        "cutOffTime": "16:00",
+        "posPayStatus": "Exception Not Available",
+        "posPayProtection": "Active",
+        "exceptionPending": "pending",
+        "checkNumber": 1234567890,
+        "paidDate": "02/02/2018"
+      },
+      {
+        "id": 981696,
+        "groupId": "FTSI",
+        "accountName": "Commercial Checking",
+        "accountNumber": 981696,
+        "accountStatus": "2",
+        "cutOffTime": "16:30",
+        "posPayStatus": "Exception Not Available",
+        "posPayProtection": "Active",
+        "exceptionPending": "pending",
+        "checkNumber": 987654321,
+        "paidDate": "03/02/2018"
+      }
+    ]
+  }
+}

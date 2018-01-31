@@ -28,9 +28,9 @@ class ImageViewModel extends BaseViewModel {
     zoomStep = 0.5;
 
     @action doZoom(isZoomIn) {
-        // const { zoom, zoomStep } = this;
+        const { zoomStep } = this;
 
-        this.zoom += this.isZoomIn * zoomStep;
+        this.zoom += isZoomIn * zoomStep;
     }
 
     @action doInvert() {
@@ -57,7 +57,6 @@ class ImageViewModel extends BaseViewModel {
 
         return this.imageModel.getImage(id).then(response => {
             this.set('isLoading', false);
-            console.log("response ",response);
 
             if(response.success) {
                 this.set('image', response.data);

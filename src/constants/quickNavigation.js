@@ -1,21 +1,42 @@
 export default [
     {
         value: 'account-administration',
-        title: 'QUICK_NAV_ACCOUNT_MAINTENANCE',
+        title: 'Account admin',
+        entitlement: 'Admin'
+    },
+    {
+        value: 'reports',
+        title: 'Profile',
         entitlement: 'Admin'
     },
     {
         value: 'positive-pay',
-        title: 'QUICK_NAV_POSITIVE_PAY',
+        title: 'Positive Pay',
         options: [
             {
                 value:'entry#manual',
-                title: 'QUICK_NAV_ENTRY_CHECKS',
+                title: 'Entry checks',
                 entitlement: 'RI manual entry'
             },
             {
                 value:'entry#upload',
-                title: 'QUICK_NAV_UPLOAD_CHECKS',
+                title: 'Upload Checks',
+                entitlement: 'RI file upload'
+            }
+        ]
+    },
+    {
+        value: 'positive-pay',
+        title: 'Reverse Positive Pay',
+        options: [
+            {
+                value:'entry#manual',
+                title: 'Entry checks',
+                entitlement: 'RI manual entry'
+            },
+            {
+                value:'entry#upload',
+                title: 'Upload Checks',
                 entitlement: 'RI file upload'
             }
         ]

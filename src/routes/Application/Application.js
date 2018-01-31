@@ -8,7 +8,7 @@ import Login from './Login';
 
 import styles from './Application.scss';
 
-const DEFAULT_ROUTE = 'summary';
+const DEFAULT_ROUTE = 'components';
 
 @observer
 class Application extends Component {

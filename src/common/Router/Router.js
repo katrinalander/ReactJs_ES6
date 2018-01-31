@@ -1,6 +1,6 @@
 import { action, observable } from 'mobx';
 
-const DEFAULT_ROUTE = 'summary';
+const DEFAULT_ROUTE = 'components';
 
 class Router {
     static instance = null;

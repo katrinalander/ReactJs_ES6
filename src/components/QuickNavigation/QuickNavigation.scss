@@ -1,0 +1,27 @@
+@import '../../assets/styles/variable';
+
+@mixin general {
+  .quick-navigation-container {
+    width: 300px;
+  }
+}
+
+/* Mobile first */
+.quick-navigation-container {
+  width: 100%;
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+  @include general;
+}
+
+/* Small desktop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+  @include general;
+}
+
+/* Large desktop */
+@media only screen and (min-width: $mediumToLarge) {
+  @include general;
+}

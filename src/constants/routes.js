@@ -1,15 +1,16 @@
 import Components from '../routes/Components';
+import Summary from '../routes/Summary';
 // import Login from './login';
 
 export default [
     {
-        path: 'summary',
+        path: 'components',
         component: Components,
         products: []
     },
     {
-        path: 'summaryL',
-        component: Components,
+        path: 'summary',
+        component: Summary,
         products: []
     }
 ]

@@ -6,8 +6,8 @@ import styles from './Navigation.scss';
 
 const ROUTIES = ['First', 'Second', 'Third'];
 const SUB_ROUTES = [
+    { title: 'Components', route: 'components' },
     { title: 'Summary', route: 'summary' },
-    { title: 'Enter checks', route: 'summaryL' },
     { title: 'Reports', route: 'reports'}
 ];
 

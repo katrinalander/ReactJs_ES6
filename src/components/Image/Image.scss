@@ -27,7 +27,7 @@
 /* Mobile first */
 .container {
   display: inline-block;
-  width: 100%;
+  //width: -webkit-fill-available;
 }
 
 .image-container {
@@ -58,7 +58,7 @@
 }
 
 .image-wrapper-scroll {
-  height: 100%;
+  //height: 100%;
   overflow: auto;
   position: absolute;
   user-select: none;
@@ -66,7 +66,7 @@
 
   IMG {
     font-size: 0;
-    height: 100%;
+    //height: 100%;
     left:0;
     position: absolute;
     top:0;
