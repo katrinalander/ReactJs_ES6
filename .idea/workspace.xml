@@ -2,45 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d850ee7c-7dd9-47b7-a77d-7f51788afd6b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/QuickNavigation/QuickNavigation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/QuickNavigation/QuickNavigation.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/QuickNavigation/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/constants/services.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/api/ProfileService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/models/ProfileModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/structures/Account.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/structures/Profile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderers/cellRendererAccount.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderers/cellRendererAccountSummary.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderers/cellRendererCheckType.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderers/cellRendererNumber.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderers/cellRendererPending.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderers/getCheckColumns.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/Summary/Summary.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/Summary/Summary.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/Summary/SummaryProvider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/Summary/SummaryViewModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/Summary/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/data/api/v1/summary.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Chechbox/Checkbox.js" afterPath="$PROJECT_DIR$/src/components/Checkbox/Checkbox.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Chechbox/Checkbox.scss" afterPath="$PROJECT_DIR$/src/components/Checkbox/Checkbox.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Chechbox/CheckboxProvider.js" afterPath="$PROJECT_DIR$/src/components/Checkbox/CheckboxProvider.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Chechbox/CheckboxViewModel.js" afterPath="$PROJECT_DIR$/src/components/Checkbox/CheckboxViewModel.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/components/Chechbox/index.js" afterPath="$PROJECT_DIR$/src/components/Checkbox/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/Router/Router.js" afterPath="$PROJECT_DIR$/src/common/Router/Router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Image/Image.js" afterPath="$PROJECT_DIR$/src/components/Image/Image.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Image/Image.scss" afterPath="$PROJECT_DIR$/src/components/Image/Image.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Image/ImageInstruments/ImageInstruments.scss" afterPath="$PROJECT_DIR$/src/components/Image/ImageInstruments/ImageInstruments.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Image/ImageViewModel.js" afterPath="$PROJECT_DIR$/src/components/Image/ImageViewModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/constants/quickNavigation.js" afterPath="$PROJECT_DIR$/src/constants/quickNavigation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/constants/routes.js" afterPath="$PROJECT_DIR$/src/constants/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/Application/Application.js" afterPath="$PROJECT_DIR$/src/routes/Application/Application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/Application/Navigation/Navigation.js" afterPath="$PROJECT_DIR$/src/routes/Application/Navigation/Navigation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/Components/Components.js" afterPath="$PROJECT_DIR$/src/routes/Components/Components.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server/data/api/v1/image.json" afterPath="$PROJECT_DIR$/src/server/data/api/v1/image.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Grid/GridHeader/GridHeader.js" afterPath="$PROJECT_DIR$/src/components/Grid/GridHeader/GridHeader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/Summary/Summary.js" afterPath="$PROJECT_DIR$/src/routes/Summary/Summary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/Summary/Summary.scss" afterPath="$PROJECT_DIR$/src/routes/Summary/Summary.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,25 +23,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="summary.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server/data/api/v1/summary.json">
+      <file leaf-file-name="Profile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/structures/Profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="25" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Components.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/routes/Components/Components.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="88" column="50" lean-forward="false" selection-start-line="88" selection-start-column="50" selection-end-line="88" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-                <element signature="n#!!block;n#renderIcons#0;n#Components#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -91,21 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileModel.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProfileModel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/models/ProfileModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="555">
               <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Summary.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Summary.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/routes/Summary/Summary.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="228" column="47" lean-forward="false" selection-start-line="228" selection-start-column="47" selection-end-line="228" selection-end-column="47" />
+            <state relative-caret-position="139">
+              <caret line="53" column="93" lean-forward="false" selection-start-line="53" selection-start-column="93" selection-end-line="53" selection-end-column="93" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -113,11 +65,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cellRendererPending.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/renderers/cellRendererPending.js">
+      <file leaf-file-name="GridHeader.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Grid/GridHeader/GridHeader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="94" column="60" lean-forward="false" selection-start-line="94" selection-start-column="60" selection-end-line="94" selection-end-column="60" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GridHeader.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Grid/GridHeader/GridHeader.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -136,21 +100,19 @@
       <file leaf-file-name="Grid.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Grid/Grid.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
+            <state relative-caret-position="2595">
               <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getCheckColumns.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/renderers/getCheckColumns.js">
+      <file leaf-file-name="SummaryViewModel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routes/Summary/SummaryViewModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
-              <folding>
-                <element signature="e#0#60#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="420">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -176,11 +138,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>viewModel</find>
-      <find>notification</find>
-      <find>Page</find>
-      <find>summary</find>
-      <find>s</find>
       <find>server/data</find>
       <find>server/data/</find>
       <find>server/data/a</find>
@@ -206,6 +163,11 @@
       <find>NO ITEM TO DISPLAY</find>
       <find>accounts</find>
       <find>consol</find>
+      <find>columns\.forEach\(col \=\&gt; \{\n            if\(column \!\=\= col\) \{\n                col\.sortOrder \= 1\;\n            \}\n        \}\)\;\n</find>
+      <find>e</find>
+      <find>ea</find>
+      <find>ea1</find>
+      <find>ea1c</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -225,8 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Panel/Panel.js" />
-        <option value="$PROJECT_DIR$/src/assets/styles/fonts.scss" />
         <option value="$PROJECT_DIR$/src/components/Spinner/Spinner.scss" />
         <option value="$PROJECT_DIR$/src/components/StickyFooter/index.js" />
         <option value="$PROJECT_DIR$/src/components/StickyFooter/StickyFooter.js" />
@@ -264,8 +224,6 @@
         <option value="$PROJECT_DIR$/src/data/services/requestService.js" />
         <option value="$PROJECT_DIR$/src/renderers/cellRendererCheckbox.js" />
         <option value="$PROJECT_DIR$/src/renderers/headerRendererCheckbox.js" />
-        <option value="$PROJECT_DIR$/src/data/structures/Profile.js" />
-        <option value="$PROJECT_DIR$/src/routes/Summary/SummaryViewModel.js" />
         <option value="$PROJECT_DIR$/src/renderers/cellRendererAccount.js" />
         <option value="$PROJECT_DIR$/src/renderers/cellRendererPending.js" />
         <option value="$PROJECT_DIR$/src/routes/Components/Components.js" />
@@ -274,8 +232,12 @@
         <option value="$PROJECT_DIR$/src/data/structures/Account.js" />
         <option value="$PROJECT_DIR$/src/renderers/cellRendererAccountSummary.js" />
         <option value="$PROJECT_DIR$/src/components/Grid/Grid.js" />
-        <option value="$PROJECT_DIR$/src/routes/Summary/Summary.js" />
         <option value="$PROJECT_DIR$/src/data/models/ProfileModel.js" />
+        <option value="$PROJECT_DIR$/src/routes/Summary/SummaryViewModel.js" />
+        <option value="$PROJECT_DIR$/src/data/structures/Profile.js" />
+        <option value="$PROJECT_DIR$/src/routes/Summary/Summary.scss" />
+        <option value="$PROJECT_DIR$/src/components/Grid/GridHeader/GridHeader.js" />
+        <option value="$PROJECT_DIR$/src/routes/Summary/Summary.js" />
       </list>
     </option>
   </component>
@@ -703,12 +665,13 @@
       <workItem from="1515516497320" duration="1013000" />
       <workItem from="1515537707200" duration="25651000" />
       <workItem from="1516648038677" duration="28875000" />
-      <workItem from="1517428305454" duration="3306000" />
+      <workItem from="1517428305454" duration="3596000" />
+      <workItem from="1517502191954" duration="2250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320263000" />
+    <option name="totallyTimeSpent" value="322803000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -721,16 +684,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="36" width="1440" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20295984" sideWeight="0.49183673" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20295984" sideWeight="0.49183673" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16737589" sideWeight="0.5024665" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20567375" sideWeight="0.49753347" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15035461" sideWeight="0.49753347" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2182849" sideWeight="0.5081633" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -738,7 +701,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -816,59 +778,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/routes/Application/Navigation/Navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#52#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#46#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/Summary/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/no_img_available.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Image/Image.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="92" column="27" lean-forward="false" selection-start-line="92" selection-start-column="27" selection-end-line="92" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Image/ImageInstruments/ImageInstruments.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Image/ImageInstruments/ImageInstruments.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1374">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#52#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -890,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1012,7 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1027,7 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,23 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/Summary/SummaryViewModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/structures/Profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,7 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,9 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2657">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#52#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1094,7 +983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,10 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="88" column="50" lean-forward="false" selection-start-line="88" selection-start-column="50" selection-end-line="88" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-            <element signature="n#!!block;n#renderIcons#0;n#Components#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1113,16 +997,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/renderers/getCheckColumns.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="60">
           <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
           <folding>
-            <element signature="e#0#60#0" expanded="true" />
+            <element signature="e#0#60#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1161,27 +1044,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Grid/Grid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
+        <state relative-caret-position="2595">
           <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/Summary/Summary.js">
+    <entry file="file://$PROJECT_DIR$/src/data/models/ProfileModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="228" column="47" lean-forward="false" selection-start-line="228" selection-start-column="47" selection-end-line="228" selection-end-column="47" />
+        <state relative-caret-position="555">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/Summary/SummaryViewModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/Components/Components.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/Application/Application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/QuickNavigation/QuickNavigation.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/Summary/Summary.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="72" column="24" lean-forward="true" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/structures/Profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Grid/GridHeader/GridHeader.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Grid/GridHeader/GridHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="94" column="60" lean-forward="false" selection-start-line="94" selection-start-column="60" selection-end-line="94" selection-end-column="60" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/models/ProfileModel.js">
+    <entry file="file://$PROJECT_DIR$/src/routes/Summary/Summary.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="139">
+          <caret line="53" column="93" lean-forward="false" selection-start-line="53" selection-start-column="93" selection-end-line="53" selection-end-column="93" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

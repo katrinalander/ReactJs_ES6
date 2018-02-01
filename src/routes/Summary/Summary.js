@@ -51,7 +51,7 @@ class Summary extends Component {
                     {title: '', field: '', className: stylesGrid.cellCheckbox, headRenderer: () => this.headerRendererCheckbox(service.code), renderer: item => this.cellRendererCheckbox(item, service.code)},
                     {title: 'Account', field: 'accountName', className: stylesGrid.cellAccountExceptionSummary, renderer: item => cellRendererAccountSummary(item)},
                     {title: 'Review', field: 'exceptionPending', className: stylesGrid.cellAlignRight},
-                    {title: 'Cut Off Time', field: 'cutOffTime', sorted: true, sortOrder: -1},
+                    {title: 'Cut Off Time', field: 'cutOffTime', sorted: true, sortable:true, sortOrder: -1},
                     {title: 'Check status', field: 'posPayStatus', className: stylesGrid.cellAlignRight}
                 ],
                 data: [],

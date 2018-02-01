@@ -1,0 +1,90 @@
+@import '../../assets/styles/variable';
+
+@mixin general {
+  .buttons-container{
+    text-align: right;
+  }
+  .button-next {
+    display: inline-block;
+    width: 200px;
+  }
+}
+
+/* Mobile first */
+.buttons-container {
+  margin-top: $space-1;
+  text-align: left;
+}
+.button-next {
+  display: none;
+}
+.withOpacity {
+  opacity: 0.3;
+  margin-top: $space-1;
+}
+.withNoOpacity {
+  opacity: none;
+  margin-top: $space-1;
+}
+.showNotification {
+  display: flex;
+  margin-left: $space-025;
+}
+.hideNotification {
+  display: none;
+}
+.infoAlert {
+  margin-bottom: $space-062;
+  I:after {
+    @include font-size-20;
+  }
+}
+.message {
+  @include font-size-20;
+  @include open-sans-light;
+  margin: 0;
+  left: 1px;
+  position: relative;
+
+  &.alert {
+    color: $alert-text;
+  }
+  &.information {
+    color: $primary-text;
+  }
+  &.confirmation {
+    color: $primary-text;
+  }
+  span {
+    @include font-size-20;
+    @include open-sans-light;
+  }
+  i {
+    margin-right: $space-05;
+  }
+  i:after {
+    @include font-size-20;
+    position: relative;
+    top: -1px;
+  }
+}
+.annotation {
+  color: $secondary-text;
+  @include font-size-14;
+  margin: $space-025 0;
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+  @include general;
+}
+
+/* Small desktop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+  @include general;
+}
+
+/* Large desktop */
+@media only screen and (min-width: $mediumToLarge) {
+  @include general;
+}

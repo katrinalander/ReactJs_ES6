@@ -92,10 +92,11 @@ class GridHeader extends Component {
             const sortOrderLabel = column.sorted ? column.sortOrder === -1 ? 'sort to high' : 'sort to low' : 'not sorted';
             const iconType = column.sorted ? column.sortOrder === -1 ? 'chevron-up' : 'chevron-down' : 'play';
 
+            console.log("check sortable ", column.sortable);
             const content = column.sortable || column.sorted ? (
                 <span>
                     { title }
-                    { '\ea1c'}
+                    {/*{ '\ea1c'}*/}
                     <Icon type={iconType} className={styles.iconSort} />
                 </span>
             ) : title;
