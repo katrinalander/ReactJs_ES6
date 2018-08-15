@@ -1,0 +1,65 @@
+@import '../../../assets/styles/variable';
+
+@mixin general {
+  .dd-check-type {
+    width: 384px;
+  }
+  .dd-account-number {
+    width: 384px;
+  }
+  .inpt-check-number {
+    width: 384px;
+  }
+  .inpt-payee {
+    width: 384px;
+  }
+  .inpt-check-amount {
+    width: 384px;
+  }
+  .inpt-check-date {
+    width: 384px;
+  }
+  .second-payee-container {
+    margin-top: 0;
+  }
+}
+
+/* mobile screen */
+.inpt-payee,.inpt-check-amount,.inpt-check-number {
+  input {
+    @include font-size-16;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+  @include general;
+}
+
+/* Small desktop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+  @include general;
+}
+
+/* Large desktop */
+@media only screen and (min-width: $mediumToLarge) {
+  @include general;
+  .dd-check-type {
+    width: calc(400px + #{$space-1});
+  }
+  .dd-account-number {
+    width: calc(400px + #{$space-1});
+  }
+  .inpt-check-number {
+    width: 424px;
+  }
+  .inpt-payee {
+    width: calc(400px + #{$space-1});
+  }
+  .inpt-check-amount {
+    width: 424px;
+  }
+  inpt-check-date {
+    width: 424px;
+  }
+}

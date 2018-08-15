@@ -1,0 +1,17 @@
+{
+  "reconFileFormats": {
+    "id": 3,
+    "fileFormatName": "PWS Delimited Text",
+    "fileType": "delimited",
+    "fieldSeparator": ",",
+    "fieldDelimiter": "\'",
+    "helpContent": "test",
+    "fileFormatFields": [
+      {
+        "id": "41",
+        "fieldName": "Transaction Indicator",
+        "fieldOrder": 1
+      }
+    ]
+  }
+}

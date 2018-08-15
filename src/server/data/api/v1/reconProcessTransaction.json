@@ -1,0 +1,16 @@
+{
+  "reconProcessTransactions": [
+    {
+      "accountNumber":981696,
+      "accountName": "some account name",
+      "accountRestriction": true,
+      "bankId": 802
+    },
+    {
+      "accountNumber":981696,
+      "accountName": "some account name",
+      "accountRestriction": true,
+      "bankId": 802
+    }
+  ]
+}

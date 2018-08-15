@@ -1,0 +1,26 @@
+@import '../../../assets/styles/variable';
+
+@mixin general {
+  .dd-file-type {
+    width: 400px;
+  }
+  .linkStyles {
+    float: right;
+    margin-top: -82;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: $zeroToSmall) and (max-width: $smallToMedium) {
+  @include general;
+}
+
+/* Small desktop */
+@media only screen and (min-width: $smallToMedium) and (max-width: $mediumToLarge) {
+  @include general;
+}
+
+/* Large desktop */
+@media only screen and (min-width: $mediumToLarge) {
+  @include general;
+}

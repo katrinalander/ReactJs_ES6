@@ -1,3 +1,6 @@
+import getDateTimeString from 'utils/getDateTimeString';
+import getTimeString from 'utils/getTimeString';
+
 class Account {
     constructor(options = {}){
         this.id = options.id;
@@ -7,10 +10,14 @@ class Account {
         this.posPayStatus = options.posPayStatus;
         // this.posPayProtection = options.posPayProtection;
         this.checkNumber = options.checkNumber;
-        this.cutOffTime = options.cutOffTime;
+        this.cutOffTime = getTimeString(options.cutOffTime) || '';
         this.exceptionPending = options.exceptionPending;
+        this.activeDate = getDateTimeString(options.activeDate) || '';
     }
     isAccountActive() {
+        return true;
+    }
+    isAccountHasStatus() {
         return true;
     }
 }
